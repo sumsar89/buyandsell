@@ -1,0 +1,46 @@
+{
+    "forsale": [
+        {
+            "Item": "Dyson Vaccum",
+            "Price": "100",
+            "Description": "Unwanted christmas present, still in box",
+            "Contact_details": "Call me at 085 1234567"
+        },
+        {
+            "Item": "iPhone 5",
+            "Price": "350",
+            "Description": "Selling because I upgraded, small scratch on screen which is why the price is reduced.",
+            "Contact_details": "email me at sponty@hotmail.com"
+        },
+        {
+            "Item": "PS3",
+            "Price": "75",
+            "Description": "Upgraded to the PS4, no need for PS3 anymore.",
+            "Contact_details": "Call me at 01 1233333"
+        },
+        {
+            "Item": "camera",
+            "Price": "500",
+            "Description": "new unwanted gift",
+            "Contact_details": "0855555555"
+        },
+        {
+            "Item": "tv",
+            "Price": "100",
+            "Description": "21\" tv",
+            "Contact_details": "011212564"
+        },
+        {
+            "Item": "headphones",
+            "Price": "120",
+            "Description": "bose headphones",
+            "Contact_details": "0851234567"
+        },
+        {
+            "Item": "hp laptop",
+            "Price": "250",
+            "Description": "5 year old laptop",
+            "Contact_details": "0851411414"
+        },
+    ]
+}

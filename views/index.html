@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" ng-app>
+
+<head>
+  <title>Buy and Sell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+<!--
+The load function below was created by Mikhail Timofeev
+-->
+  <script>
+    function load() {
+      $.ajax({
+        url: "/get/html",
+        cache: false,
+        success: function(html) {
+          $("#results").append(html);
+        }
+      });
+    };
+
+    $(document).ready(function() {
+      load();
+    });
+    
+  </script>
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+      </div>
+    </div>
+    <div class="page-header">
+      <h1>Buy & Sell</h1>
+    </div>
+    <!-- For Sale Box-->
+    <div class="row">
+      <div id="results" class="span8">
+      </div>
+      <div class="span4">
+        <ul class="nav nav-list well">
+          <li>
+            <form enctype='application/json' action="/post/json" method="post">
+              <div class="field">
+                <input type="text" name="Item" placeholder="Item for sale">
+              </div>
+              <div class="field">
+                <input type="text" name="Price" placeholder="Price">
+              </div>
+              <div class="field">
+                <input type="text" name="Description" placeholder="Description">
+              </div>
+              <div class="field">
+                <input type="text" name="Contact_details" placeholder="Contact details">
+              </div>
+              <div class="field">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+        <!-- To Buy Box
+    <div class="row">
+      <div id="results" class="span8">
+      </div>
+      <div class="span4">
+        <ul class="nav nav-list well">
+          <li>
+            <form enctype='application/json' action="/post/json" method="post">
+              <div class="field">
+                <input type="text" name="Item" placeholder="Item for sale">
+              </div>
+              <div class="field">
+                <input type="text" name="Price" placeholder="Price">
+              </div>
+              <div class="field">
+                <input type="text" name="Description" placeholder="Description">
+              </div>
+              <div class="field">
+                <input type="text" name="Contact_details" placeholder="Contact details">
+              </div>
+              <div class="field">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>-->
+  </div>
+</body>
+
+  
+</html>

@@ -68,7 +68,7 @@ input[type=text] {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    width: 49.7%;
+    width:100%;
   font-size: 3em;
 }
 
@@ -79,6 +79,8 @@ input[type=text] {
 .buyingButton {
   background-color: #364156;
 }
+
+
 
 /*Small Button Styling*/
 .smallbutton{
@@ -101,6 +103,24 @@ input[type=text] {
   background-color: #364156;
 }
 
+
 #results{
   margin-bottom: 20px;
+}
+
+#boxWrapper{
+  margin-bottom: 25px;
+}
+
+#links li{
+  text-decoration: none;
+  float: right;
+  margin: -10px 5px 0px 5px;
+  list-style: none;
+  display: inline-block;
+  color: white;
+}
+
+#links a{
+  color: white;
 }

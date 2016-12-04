@@ -9,7 +9,10 @@ body {
       font-size:large;
       color:white;
     }
-    
+.page-header{
+  margin-top: -30px;
+  
+}
     h3{
       padding-left:10px;
       padding-top:20px;
@@ -35,7 +38,7 @@ body {
       border: 1px solid black;
       text-align: left;
       padding: 10px;
- 
+
     }
     th{    
     color: white;}
@@ -44,3 +47,62 @@ body {
     #forSale, #toBuy{
       padding-top: 30px;
     }
+
+/*Input form styling*/
+
+input[type=text] {
+    width: 93%;
+    padding: 12px 20px;
+    margin: 8px 0;
+
+}
+
+.forSaleButton {
+  background-color: #7D4E57;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.toBuyButton {
+  background-color: #364156;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*Button styling*/
+.button {
+  background-color: #7D4E57;
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 49.7%;
+  font-size: 3em;
+}
+
+.sellingButton{
+  background-color: #7D4E57;
+}
+
+.buyingButton {
+  background-color: #364156;
+}

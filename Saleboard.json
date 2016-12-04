@@ -47,6 +47,18 @@
             "Price": "150",
             "Description": "Living in cork",
             "Contact_details": "0555554545"
+        },
+        {
+            "ItemForSale": "",
+            "Price": "",
+            "Description": "",
+            "Contact_details": ""
+        },
+        {
+            "ItemForSale": "",
+            "Price": "",
+            "Description": "",
+            "Contact_details": ""
         }
     ]
 }

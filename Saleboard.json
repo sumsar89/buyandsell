@@ -47,6 +47,30 @@
             "Price": "150",
             "Description": "Living in cork",
             "Contact_details": "0555554545"
+        },
+        {
+            "ItemToBuy": "Babys Cot",
+            "Price": "list offer",
+            "Description": "looking to get a babys cot, please list an offer",
+            "Contact_details": "email me at email@email.com"
+        },
+        {
+            "ItemToBuy": "Pool table",
+            "Price": "list offer",
+            "Description": "Looking to get a pub styled pool table, let me know a price and we can negotiate from there",
+            "Contact_details": "email or phone 0252485 1051"
+        },
+        {
+            "ItemToBuy": "Xmas tree",
+            "Price": "50",
+            "Description": "Looking to buy a used artificial xmas tree",
+            "Contact_details": "0525015151"
+        },
+        {
+            "ItemToBuy": "Rocket league for PS4",
+            "Price": "10",
+            "Description": "If anyone has rocket league they don't want anymore, please contact me",
+            "Contact_details": "051515158151"
         }
     ]
 }

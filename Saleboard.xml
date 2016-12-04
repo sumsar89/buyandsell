@@ -48,4 +48,28 @@
         <Description>Living in cork</Description>
         <Contact_details>0555554545</Contact_details>
     </ad>
+    <ad>
+        <ItemToBuy>Babys Cot</ItemToBuy>
+        <Price>list offer</Price>
+        <Description>looking to get a babys cot, please list an offer</Description>
+        <Contact_details>email me at email@email.com</Contact_details>
+    </ad>
+    <ad>
+        <ItemToBuy>Pool table</ItemToBuy>
+        <Price>list offer</Price>
+        <Description>Looking to get a pub styled pool table, let me know a price and we can negotiate from there</Description>
+        <Contact_details>email or phone 0252485 1051</Contact_details>
+    </ad>
+    <ad>
+        <ItemToBuy>Xmas tree</ItemToBuy>
+        <Price>50</Price>
+        <Description>Looking to buy a used artificial xmas tree</Description>
+        <Contact_details>0525015151</Contact_details>
+    </ad>
+    <ad>
+        <ItemToBuy>Rocket league for PS4</ItemToBuy>
+        <Price>10</Price>
+        <Description>If anyone has rocket league they don't want anymore, please contact me</Description>
+        <Contact_details>051515158151</Contact_details>
+    </ad>
 </salesboard>

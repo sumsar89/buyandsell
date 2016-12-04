@@ -6,7 +6,7 @@ body {
       background:url("../bg.jpg") no-repeat 50% 50% fixed;
       background-size:cover;
       min-height:100%;
-      font-size:large;
+      font-size:.9em;
       color:white;
     }
 .page-header{
@@ -69,7 +69,7 @@ input[type=text] {
     display: inline-block;
     cursor: pointer;
     width:100%;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .sellingButton{

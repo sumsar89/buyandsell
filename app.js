@@ -51,7 +51,7 @@ router.post('/post/json', function(req, res) {
     var JSONparsed = JSON.parse(JSONfile);
 
     // Add a new record into country array within the JSON file    
-    JSONparsed.forsale.push(obj);
+    JSONparsed.ad.push(obj);
 
     // Beautify the resulting JSON file
     var JSONformated = JSON.stringify(JSONparsed, null, 4);
@@ -75,7 +75,7 @@ router.post('/post/json', function(req, res) {
 
 });
 
-/*
+
 //Code for ToBuy Input
 // POST request to add to JSON & XML files
 router.post('/post/json', function(req, res) {
@@ -90,7 +90,7 @@ router.post('/post/json', function(req, res) {
     var JSONparsed = JSON.parse(JSONfile);
 
     // Add a new record into country array within the JSON file    
-    JSONparsed.tobuy.push(obj);
+    JSONparsed.ad.push(obj);
 
     // Beautify the resulting JSON file
     var JSONformated = JSON.stringify(JSONparsed, null, 4);
@@ -113,7 +113,7 @@ router.post('/post/json', function(req, res) {
   res.redirect('back');
 
 });
-*/
+
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
   var addr = server.address();

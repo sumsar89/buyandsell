@@ -12,9 +12,9 @@
 	 	 <th style="text-align:left">Product Condition</th>
 	 	 <th style="text-align:left">Contact Seller</th>
     </tr>
-		<xsl:for-each select="salesboard/forsale">
+		<xsl:for-each select="salesboard/ad[ItemForSale]">
     <tr>
-      <td><xsl:value-of select="Item"/></td>
+      <td><xsl:value-of select="ItemForSale"/></td>
       <td><xsl:value-of select="Price"/></td>
 	 		<td><xsl:value-of select="Description"/></td>
 	  	<td><xsl:value-of select="Contact_details"/></td>
@@ -30,9 +30,9 @@
 	 	 <th style="text-align:left">Buyer comments</th>
 	 	 <th style="text-align:left">Contact Buyer</th>
     </tr>
-		<xsl:for-each select="salesboard/tobuy">
+		<xsl:for-each select="salesboard/ad[ItemToBuy]">
     <tr>
-      <td><xsl:value-of select="Item"/></td>
+      <td><xsl:value-of select="ItemToBuy"/></td>
       <td><xsl:value-of select="Price"/></td>
 	 		<td><xsl:value-of select="Description"/></td>
 	  	<td><xsl:value-of select="Contact_details"/></td>

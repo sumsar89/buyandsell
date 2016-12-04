@@ -1,45 +1,45 @@
 <?xml version='1.0'?>
 <salesboard>
-    <forsale>
-        <Item>Dyson Vaccum</Item>
+    <ad>
+        <ItemForSale>Dyson Vaccum</ItemForSale>
         <Price>100</Price>
         <Description>Unwanted christmas present, still in box</Description>
         <Contact_details>Call me at 085 1234567</Contact_details>
-    </forsale>
-    <forsale>
-        <Item>iPhone 5</Item>
+    </ad>
+    <ad>
+        <ItemForSale>iPhone 5</ItemForSale>
         <Price>350</Price>
         <Description>Selling because I upgraded, small scratch on screen which is why the price is reduced.</Description>
         <Contact_details>email me at sponty@hotmail.com</Contact_details>
-    </forsale>
-    <forsale>
-        <Item>PS3</Item>
+    </ad>
+    <ad>
+        <ItemForSale>PS3</ItemForSale>
         <Price>75</Price>
         <Description>Upgraded to the PS4, no need for PS3 anymore.</Description>
         <Contact_details>Call me at 01 1233333</Contact_details>
-    </forsale>
-    <forsale>
-        <Item>camera</Item>
+    </ad>
+    <ad>
+        <ItemForSale>camera</ItemForSale>
         <Price>500</Price>
         <Description>new unwanted gift</Description>
         <Contact_details>0855555555</Contact_details>
-    </forsale>
-    <forsale>
-        <Item>tv</Item>
+    </ad>
+    <ad>
+        <ItemForSale>tv</ItemForSale>
         <Price>100</Price>
         <Description>21" tv</Description>
         <Contact_details>011212564</Contact_details>
-    </forsale>
-    <forsale>
-        <Item>headphones</Item>
-        <Price>120</Price>
-        <Description>bose headphones</Description>
-        <Contact_details>0851234567</Contact_details>
-    </forsale>
-    <forsale>
-        <Item>hp laptop</Item>
+    </ad>
+    <ad>
+        <ItemForSale>hp laptop</ItemForSale>
         <Price>250</Price>
         <Description>5 year old laptop</Description>
         <Contact_details>0851411414</Contact_details>
-    </forsale>
+    </ad>
+    <ad>
+        <ItemToBuy>headphones</ItemToBuy>
+        <Price>120</Price>
+        <Description>bose headphones</Description>
+        <Contact_details>0851234567</Contact_details>
+    </ad>
 </salesboard>

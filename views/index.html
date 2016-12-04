@@ -37,39 +37,19 @@ The load function below was created by Mikhail Timofeev
       <h1>Buy & Sell</h1>
     </div>
     
-    <button class="button buyingButton">Buying</button>
+
     
-    <button class="button sellingButton">Selling</button>
-    
-    <!-- For Sale Box-->
+    <!--Results and row-->
     <div class="row">
       <div id="results" class="span12">
       </div>
-      <div id="forSale" class="span6">
-        <ul class="nav nav-list well">
-          <li>
-            <form enctype='application/json' action="/post/json" method="post">
-              <div class="field">
-                <input type="text" name="ItemForSale" placeholder="Item for sale" required>
-              </div>
-              <div class="field">
-                <input type="text" name="Price" placeholder="Price">
-              </div>
-              <div class="field">
-                <input type="text" name="Description" placeholder="Description">
-              </div>
-              <div class="field">
-                <input type="text" name="Contact_details" placeholder="Contact details">
-              </div>
-              <div class="field">
-                <button type="submit" class="forSaleButton">SUBMIT SALE</button>
-              </div>
-            </form>
-          </li>
-        </ul>
-      </div>
       
-     <!-- To buy box -->
+ <div id="buttonWrapper" class="span12" >
+    <button class="button buyingButton">Buying</button>
+    <button class="button sellingButton">Selling</button>
+ </div>  
+   
+<!-- To buy box -->
      <div id="toBuy" class="span6">
         <ul class="nav nav-list well">
           <li>
@@ -87,13 +67,40 @@ The load function below was created by Mikhail Timofeev
                 <input type="text" name="Contact_details" placeholder="Contact details">
               </div>
               <div class="field">
-                <button type="submit" class="toBuyButton">SUBMIT ENQUIRY</button>
+                <button type="submit" class="smallbutton toBuyButton">SUBMIT ENQUIRY</button>
               </div>
             </form>
           </li>
         </ul>
       </div>
-    </div>
+      
+    
+      <!-- For Sale Box-->
+      <div id="forSale" class="span6">
+        <ul class="nav nav-list well">
+          <li>
+            <form enctype='application/json' action="/post/json" method="post">
+              <div class="field">
+                <input type="text" name="ItemForSale" placeholder="Item for sale" required>
+              </div>
+              <div class="field">
+                <input type="text" name="Price" placeholder="Price">
+              </div>
+              <div class="field">
+                <input type="text" name="Description" placeholder="Description">
+              </div>
+              <div class="field">
+                <input type="text" name="Contact_details" placeholder="Contact details">
+              </div>
+              <div class="field">
+                <button type="submit" class="smallbutton forSaleButton">SUBMIT SALE</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+  </div><!-- Row-->
+     
 
   </div>
 </body>

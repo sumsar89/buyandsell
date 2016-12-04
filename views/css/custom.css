@@ -57,40 +57,13 @@ input[type=text] {
 
 }
 
-.forSaleButton {
-  background-color: #7D4E57;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 100%;
-}
 
-.toBuyButton {
-  background-color: #364156;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 100%;
-}
-
-/*Button styling*/
+/*Big Button styling*/
 .button {
   background-color: #7D4E57;
     border: none;
     color: white;
-    padding: 30px 64px;
+    padding: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -105,4 +78,29 @@ input[type=text] {
 
 .buyingButton {
   background-color: #364156;
+}
+
+/*Small Button Styling*/
+.smallbutton{
+      border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+.forSaleButton {
+  background-color: #7D4E57;
+
+}
+.toBuyButton {
+  background-color: #364156;
+}
+
+#results{
+  margin-bottom: 20px;
 }

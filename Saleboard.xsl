@@ -3,24 +3,6 @@
 <xsl:template match="/">
 <html> 
 <body>
-  <h3>For Sale</h3>
-	
-  <table border="1">
-    <tr bgcolor="#7D4E57">
-      <th style="text-align:left">For Sale</th>
-      <th style="text-align:left">Price Wanted</th>
-	 	 <th style="text-align:left">Product Condition</th>
-	 	 <th style="text-align:left">Contact Seller</th>
-    </tr>
-		<xsl:for-each select="salesboard/ad[ItemForSale]">
-    <tr>
-      <td><xsl:value-of select="ItemForSale"/></td>
-      <td><xsl:value-of select="Price"/></td>
-	 		<td><xsl:value-of select="Description"/></td>
-	  	<td><xsl:value-of select="Contact_details"/></td>
-    </tr>
-		</xsl:for-each>
-  </table>
 	
 	<h3>To Buy</h3>
   <table border="1">
@@ -38,7 +20,26 @@
 	  	<td><xsl:value-of select="Contact_details"/></td>
     </tr>
 		</xsl:for-each>
+	</table>	
+	
+  <h3>For Sale</h3>
+  <table border="1">
+    <tr bgcolor="#7D4E57">
+      <th style="text-align:left">For Sale</th>
+      <th style="text-align:left">Price Wanted</th>
+	 	 <th style="text-align:left">Product Condition</th>
+	 	 <th style="text-align:left">Contact Seller</th>
+    </tr>
+		<xsl:for-each select="salesboard/ad[ItemForSale]">
+    <tr>
+      <td><xsl:value-of select="ItemForSale"/></td>
+      <td><xsl:value-of select="Price"/></td>
+	 		<td><xsl:value-of select="Description"/></td>
+	  	<td><xsl:value-of select="Contact_details"/></td>
+    </tr>
+		</xsl:for-each>
   </table>
+	
 </body>
 </html>
 </xsl:template>

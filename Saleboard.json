@@ -41,6 +41,12 @@
             "Price": "120",
             "Description": "bose headphones",
             "Contact_details": "0851234567"
+        },
+        {
+            "ItemToBuy": "ps4",
+            "Price": "150",
+            "Description": "Living in cork",
+            "Contact_details": "0555554545"
         }
     ]
 }

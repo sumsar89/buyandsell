@@ -6,7 +6,7 @@
   <h3>For Sale</h3>
 	
   <table border="1">
-    <tr bgcolor="#5DADE2">
+    <tr bgcolor="#7D4E57">
       <th style="text-align:left">For Sale</th>
       <th style="text-align:left">Price Wanted</th>
 	 	 <th style="text-align:left">Product Condition</th>
@@ -24,8 +24,8 @@
 	
 	<h3>To Buy</h3>
   <table border="1">
-    <tr bgcolor="#2ECC71">
-      <th style="text-align:left">Looking For Item</th>
+    <tr bgcolor="#364156">
+      <th style="text-align:left">Wanted</th>
       <th style="text-align:left">Willing To Pay</th>
 	 	 <th style="text-align:left">Buyer comments</th>
 	 	 <th style="text-align:left">Contact Buyer</th>

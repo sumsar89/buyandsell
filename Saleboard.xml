@@ -42,4 +42,10 @@
         <Description>bose headphones</Description>
         <Contact_details>0851234567</Contact_details>
     </ad>
+    <ad>
+        <ItemToBuy>ps4</ItemToBuy>
+        <Price>150</Price>
+        <Description>Living in cork</Description>
+        <Contact_details>0555554545</Contact_details>
+    </ad>
 </salesboard>

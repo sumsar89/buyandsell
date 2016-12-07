@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="">
+<head>
+	<title>Buy and Sell</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="/css/custom.css" rel="stylesheet">
+	<script src="/js/jquery.min.js">
+	</script>
+	<script src="/js/bootstrap.min.js">
+	</script>
+  
+<!--
+The load object below was created by Mikhail Timofeev
+-->
+
+	<script>
+	   function load() {
+	     $.ajax({
+	       url: "/get/html",
+	       cache: false,
+	       success: function(html) {
+	         $("#results").append(html);
+	       }
+	     });
+	   };
+
+	   $(document).ready(function() {
+	     load();
+	     $("#forSale,#toBuy").hide();//hide the input boxes on screen load
+	   });
+	   
+	//Toggle buy form
+	$(document).ready(function(){
+	   $(".buyingButton").click(function(){
+	       $("#toBuy").toggle();
+	   });
+	}); 
+	   
+	//Toggle sell form
+	$(document).ready(function(){
+	   $(".sellingButton").click(function(){
+	       $("#forSale").toggle();
+	   });
+	});       
+		
+	   
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Buy & Sell</h1>
+      <ul id="links">
+        <li><a href="#">Admin</a></li>
+      </ul>
+		</div>
+		<!--Results and row-->
+
+
+		<div class="row">
+			<div class="span12" id="results">
+			</div>
+			<!-- To buy box -->
+
+
+			<div class="span6" id="boxWrapper">
+				<button class="button buyingButton">Advertise To Buy</button>
+
+				<div id="toBuy">
+					<ul class="nav nav-list well">
+						<li>
+							<form action="/post/json" enctype='application/json' method="post">
+								<div class="field">
+									<input name="ItemToBuy" placeholder="Item to buy" required="" type="text">
+								</div>
+
+								<!--onkeypress event below restricts input to numbers only, reference http://stackoverflow.com/questions/10713749/javascript-validation-numbers-only-->
+								<div class="field">
+									<input name="Price" placeholder="Max Price" type="text" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
+								</div>
+
+
+								<div class="field">
+									<input name="Description" placeholder="Description" type="text">
+								</div>
+
+								<!--Type restricts input to email format-->
+								<div class="field">
+									<input name="Contact_details" placeholder="Email Address" type="email" >
+								</div>
+
+								
+								<div class="field">
+									<button class="smallbutton toBuyButton" type="submit" >POST PLEA</button>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--BoxWrapper-->
+
+			<div class="span6" id="boxWrapper">
+				<!-- For Sale Box-->
+				<button class="button sellingButton">Advertise To Sell</button>
+
+				<div id="forSale">
+					<ul class="nav nav-list well">
+						<li>
+							<form action="/post/json" enctype='application/json' method="post">
+								<div class="field">
+									<input name="ItemForSale" placeholder="Item for sale" required="" type="text">
+								</div>
+
+								<!--onkeypress event below restricts input to numbers only, reference http://stackoverflow.com/questions/10713749/javascript-validation-numbers-only-->
+								<div class="field">
+									<input name="Price" placeholder="Price"  type="text" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
+								</div>
+
+
+								<div class="field">
+									<input name="Description" placeholder="Description" type="text">
+								</div>
+
+								<!--Type restricts input to email format-->
+								<div class="field">
+									<input name="Contact_details" placeholder="Email Address" type="email">
+								</div>
+
+
+								<div class="field">
+									<button class="smallbutton forSaleButton" type="submit">SUBMIT SALE</button>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--BoxWrapper-->
+		</div>
+		<!-- Row-->
+	</div>
+</body>
+</html>

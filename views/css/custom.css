@@ -1,0 +1,126 @@
+/*Custom styling added*/
+
+body {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background:url("../bg.jpg") no-repeat 50% 50% fixed;
+      background-size:cover;
+      min-height:100%;
+      font-size:.9em;
+      color:white;
+    }
+.page-header{
+  margin-top: -30px;
+  
+}
+    h3{
+      padding-left:10px;
+      padding-top:20px;
+      color:white;
+    }
+     
+    
+    /*Table styling*/
+    table
+    {
+    width: 100%;
+    border-collapse: collapse;
+    background-color:white;
+    color: black;
+    }
+
+    tr:nth-child(even){
+      background-color: #f2f2f2
+    }
+
+    th, td {
+      border-collapse: collapse;
+      border: 1px solid black;
+      text-align: left;
+      padding: 10px;
+
+    }
+    th{    
+    color: white;}
+    /*End of table styling*/
+    
+    #forSale, #toBuy{
+      padding-top: 30px;
+    }
+
+/*Input form styling*/
+
+input[type=text], input[type=number], input[type=email]{
+    width: 93%;
+    padding: 12px 20px;
+    margin: 8px 0;
+
+}
+
+
+/*Big Button styling*/
+.button {
+  background-color: #7D4E57;
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width:100%;
+  font-size: 2em;
+}
+
+.sellingButton{
+  background-color: #7D4E57;
+}
+
+.buyingButton {
+  background-color: #364156;
+}
+
+
+
+/*Small Button Styling*/
+.smallbutton{
+      border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+.forSaleButton {
+  background-color: #7D4E57;
+
+}
+.toBuyButton {
+  background-color: #364156;
+}
+
+
+#results{
+  margin-bottom: 20px;
+}
+
+#boxWrapper{
+  margin-bottom: 25px;
+}
+
+#links li{
+  text-decoration: none;
+  float: right;
+  margin: -10px 5px 0px 5px;
+  list-style: none;
+  display: inline-block;
+  color: white;
+}
+
+#links a{
+  color: white;
+}

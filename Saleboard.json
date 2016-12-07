@@ -1,0 +1,88 @@
+{
+    "ad": [
+        {
+            "ItemForSale": "Dyson Vaccum",
+            "Price": "100",
+            "Description": "Unwanted christmas present, still in box",
+            "Contact_details": "email@email.com"
+        },
+        {
+            "ItemForSale": "iPhone 5",
+            "Price": "350",
+            "Description": "Selling because I upgraded, small scratch on screen which is why the price is reduced.",
+            "Contact_details": "sponty@hotmail.com"
+        },
+        {
+            "ItemForSale": "PS3",
+            "Price": "75",
+            "Description": "Upgraded to the PS4, no need for PS3 anymore.",
+            "Contact_details": "email111@email.com"
+        },
+        {
+            "ItemForSale": "camera",
+            "Price": "500",
+            "Description": "new unwanted gift",
+            "Contact_details": "email11212@email.com"
+        },
+        {
+            "ItemForSale": "tv",
+            "Price": "100",
+            "Description": "21\" tv",
+            "Contact_details": "email121212@email.com"
+        },
+        {
+            "ItemForSale": "hp laptop",
+            "Price": "250",
+            "Description": "5 year old laptop",
+            "Contact_details": "email12121@email.com"
+        },
+        {
+            "ItemToBuy": "headphones",
+            "Price": "120",
+            "Description": "bose headphones",
+            "Contact_details": "email@email.com"
+        },
+        {
+            "ItemToBuy": "ps4",
+            "Price": "150",
+            "Description": "Living in cork",
+            "Contact_details": "1212@hotmail.com"
+        },
+        {
+            "ItemToBuy": "Babys Cot",
+            "Price": "50",
+            "Description": "looking to get a babys cot, please list an offer",
+            "Contact_details": "ololol@hotmail.com"
+        },
+        {
+            "ItemToBuy": "Pool table",
+            "Price": "125",
+            "Description": "Looking to get a pub styled pool table, let me know a price and we can negotiate from there",
+            "Contact_details": "ebald@hotmail.com"
+        },
+        {
+            "ItemToBuy": "Xmas tree",
+            "Price": "50",
+            "Description": "Looking to buy a used artificial xmas tree",
+            "Contact_details": "jshuh@hotmail.com"
+        },
+        {
+            "ItemToBuy": "Rocket league for PS4",
+            "Price": "10",
+            "Description": "If anyone has rocket league they don't want anymore, please contact me",
+            "Contact_details": "dudud@hotmail.com"
+        },
+        {
+            "ItemToBuy": "Car radio",
+            "Price": "50",
+            "Description": "cd car radio must fit nissan micra",
+            "Contact_details": "joey@hotmail.com"
+        },
+        {
+            "ItemToBuy": "Canon 60D",
+            "Price": "600",
+            "Description": "Hopefully someone has one without any scratches on the lense",
+            "Contact_details": "grrreeeggg@hotmail.com"
+        }
+    ]
+}

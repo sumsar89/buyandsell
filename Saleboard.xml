@@ -1,30 +1,6 @@
 <?xml version='1.0'?>
 <salesboard>
     <ad>
-        <ItemForSale>Dyson Vaccum</ItemForSale>
-        <Price>100</Price>
-        <Description>Unwanted christmas present, still in box</Description>
-        <Contact_details>email@email.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemForSale>iPhone 5</ItemForSale>
-        <Price>350</Price>
-        <Description>Selling because I upgraded, small scratch on screen which is why the price is reduced.</Description>
-        <Contact_details>sponty@hotmail.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemForSale>PS3</ItemForSale>
-        <Price>75</Price>
-        <Description>Upgraded to the PS4, no need for PS3 anymore.</Description>
-        <Contact_details>email111@email.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemForSale>camera</ItemForSale>
-        <Price>500</Price>
-        <Description>new unwanted gift</Description>
-        <Contact_details>email11212@email.com</Contact_details>
-    </ad>
-    <ad>
         <ItemForSale>tv</ItemForSale>
         <Price>100</Price>
         <Description>21" tv</Description>
@@ -67,21 +43,21 @@
         <Contact_details>jshuh@hotmail.com</Contact_details>
     </ad>
     <ad>
-        <ItemToBuy>Rocket league for PS4</ItemToBuy>
-        <Price>10</Price>
-        <Description>If anyone has rocket league they don't want anymore, please contact me</Description>
-        <Contact_details>dudud@hotmail.com</Contact_details>
+        <ItemForSale>Game of Thrones Cups</ItemForSale>
+        <Price>15.50</Price>
+        <Description>new</Description>
+        <Contact_details>test@test.com</Contact_details>
     </ad>
     <ad>
-        <ItemToBuy>Car radio</ItemToBuy>
-        <Price>50</Price>
-        <Description>cd car radio must fit nissan micra</Description>
-        <Contact_details>joey@hotmail.com</Contact_details>
+        <ItemForSale>Beer glass</ItemForSale>
+        <Price>2.50</Price>
+        <Description>Guinness glass</Description>
+        <Contact_details>test@test.com</Contact_details>
     </ad>
     <ad>
-        <ItemToBuy>Canon 60D</ItemToBuy>
-        <Price>600</Price>
-        <Description>Hopefully someone has one without any scratches on the lense</Description>
-        <Contact_details>grrreeeggg@hotmail.com</Contact_details>
+        <ItemForSale>Novelty Mirror</ItemForSale>
+        <Price>100</Price>
+        <Description>Makes you look like yourself</Description>
+        <Contact_details>test@test.com</Contact_details>
     </ad>
 </salesboard>

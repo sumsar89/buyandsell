@@ -7,6 +7,8 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
+	<script type="text/javascript" src="/path/to/jquery-latest.js"></script> 
+<script type="text/javascript" src="/path/to/jquery.tablesorter.js"></script> 
 	<script src="/js/jquery.min.js">
 	</script>
 	<script src="/js/bootstrap.min.js">
@@ -45,8 +47,41 @@ The load object below was created by Mikhail Timofeev
 	       $("#forSale").toggle();
 	   });
 	});       
+
+  
+		/**
+		$(document).ready(function() {
+
+
+    function parseXml(xml) {
+			
+    $(xml).find("url").eq(1).remove();
+
+    $(xml).find("url").each(function(index) {
+        $("#results").append($(this).text());
+    });
+    }
+
+		});**/
 		
-	   
+		
+		
+	/**	
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    var len = xmlDoc.getElementsByTagName('salesboard').length;
+    var y = xmlDoc.getElementsByTagName("salesboard")[len-1];
+    var x = xmlDoc.documentElement.removeChild(y);
+    document.getElementById("#results").innerHTML =
+    "Removed node: " + x.nodeName;
+}
+		
+			//DELETE XML TABLE DATA
+	$(document).ready(function(){
+	   $(".deleteXML").click(function(){
+	       myFunction();
+	   });
+	}); **/
 	</script>
 </head>
 
@@ -57,12 +92,19 @@ The load object below was created by Mikhail Timofeev
       <ul id="links">
         <li><a href="#">Admin</a></li>
       </ul>
+
+			<span></span>
 		</div>
 		<!--Results and row-->
 
 
 		<div class="row">
+			
+			
 			<div class="span12" id="results">
+				<!-- Test Button to Delete-->
+	<button class="button deleteXML">Clear Data</button>			
+
 			</div>
 			<!-- To buy box -->
 
@@ -75,7 +117,7 @@ The load object below was created by Mikhail Timofeev
 						<li>
 							<form action="/post/json" enctype='application/json' method="post">
 								<div class="field">
-									<input name="ItemToBuy" placeholder="Item to buy" required="" type="text">
+									<input name="ItemToBuy" placeholder="Item to buy" type="text">
 								</div>
 
 								<!--onkeypress event below restricts input to numbers only, reference http://stackoverflow.com/questions/10713749/javascript-validation-numbers-only-->
@@ -113,7 +155,7 @@ The load object below was created by Mikhail Timofeev
 						<li>
 							<form action="/post/json" enctype='application/json' method="post">
 								<div class="field">
-									<input name="ItemForSale" placeholder="Item for sale" required="" type="text">
+									<input name="ItemForSale" placeholder="Item for sale" type="text">
 								</div>
 
 								<!--onkeypress event  below restricts input to numbers only, reference http://stackoverflow.com/questions/10713749/javascript-validation-numbers-only-->

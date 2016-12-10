@@ -1,63 +1,63 @@
 <?xml version='1.0'?>
 <salesboard>
-    <ad>
-        <ItemForSale>hp laptop</ItemForSale>
+    <buy>
+        <ItemToBuy>buy 1</ItemToBuy>
+        <Price>1</Price>
+        <Description>test</Description>
+        <Contact_details>test@test.com</Contact_details>
+    </buy>
+    <buy>
+        <ItemToBuy>buy 2</ItemToBuy>
+        <Price>20000</Price>
+        <Description>buy 2</Description>
+        <Contact_details>buy2@test.com</Contact_details>
+    </buy>
+    <buy>
+        <ItemToBuy>buy 4</ItemToBuy>
+        <Price>4000</Price>
+        <Description>buy 4</Description>
+        <Contact_details>buy4@test.com</Contact_details>
+    </buy>
+    <buy>
+        <ItemToBuy>buy cow</ItemToBuy>
+        <Price>50000</Price>
+        <Description>buy test</Description>
+        <Contact_details>test@buy.com</Contact_details>
+    </buy>
+    <buy>
+        <ItemToBuy>Boxing Bag</ItemToBuy>
+        <Price>50</Price>
+        <Description>For punching</Description>
+        <Contact_details>boxer@gmail.com</Contact_details>
+    </buy>
+    <buy>
+        <ItemToBuy>iPhone</ItemToBuy>
         <Price>250</Price>
-        <Description>5 year old laptop</Description>
-        <Contact_details>email12121@email.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemToBuy>headphones</ItemToBuy>
-        <Price>120</Price>
-        <Description>bose headphones</Description>
-        <Contact_details>email@email.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemToBuy>ps4</ItemToBuy>
-        <Price>150</Price>
-        <Description>Living in cork</Description>
-        <Contact_details>1212@hotmail.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemToBuy>Babys Cot</ItemToBuy>
-        <Price>50</Price>
-        <Description>looking to get a babys cot, please list an offer</Description>
-        <Contact_details>ololol@hotmail.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemToBuy>Pool table</ItemToBuy>
-        <Price>125</Price>
-        <Description>Looking to get a pub styled pool table, let me know a price and we can negotiate from there</Description>
-        <Contact_details>ebald@hotmail.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemToBuy>Xmas tree</ItemToBuy>
-        <Price>50</Price>
-        <Description>Looking to buy a used artificial xmas tree</Description>
-        <Contact_details>jshuh@hotmail.com</Contact_details>
-    </ad>
-    <ad>
+        <Description>Please without a cracked screen</Description>
+        <Contact_details>needaphone@hotmail.com</Contact_details>
+    </buy>
+    <sale>
         <ItemForSale>Game of Thrones Cups</ItemForSale>
         <Price>15.50</Price>
         <Description>new</Description>
         <Contact_details>test@test.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemForSale>Beer glass</ItemForSale>
-        <Price>2.50</Price>
-        <Description>Guinness glass</Description>
+    </sale>
+    <sale>
+        <ItemForSale>new sale</ItemForSale>
+        <Price>1</Price>
+        <Description>test</Description>
         <Contact_details>test@test.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemForSale>Novelty Mirror</ItemForSale>
-        <Price>100</Price>
-        <Description>Makes you look like yourself</Description>
+    </sale>
+    <sale>
+        <ItemForSale>sale 5</ItemForSale>
+        <Price>5</Price>
+        <Description>test</Description>
         <Contact_details>test@test.com</Contact_details>
-    </ad>
-    <ad>
-        <ItemToBuy></ItemToBuy>
-        <Price></Price>
-        <Description></Description>
-        <Contact_details></Contact_details>
-    </ad>
+    </sale>
+    <sale>
+        <ItemForSale>buy a plant save the world</ItemForSale>
+        <Price>50</Price>
+        <Description>its a plant for poor people</Description>
+        <Contact_details>plantation@gmail.com</Contact_details>
+    </sale>
 </salesboard>

@@ -1,41 +1,43 @@
 {
-    "ad": [
+    "buy": [
         {
-            "ItemForSale": "hp laptop",
+            "ItemToBuy": "buy 1",
+            "Price": "1",
+            "Description": "test",
+            "Contact_details": "test@test.com"
+        },
+        {
+            "ItemToBuy": "buy 2",
+            "Price": "20000",
+            "Description": "buy 2",
+            "Contact_details": "buy2@test.com"
+        },
+        {
+            "ItemToBuy": "buy 4",
+            "Price": "4000",
+            "Description": "buy 4",
+            "Contact_details": "buy4@test.com"
+        },
+        {
+            "ItemToBuy": "buy cow",
+            "Price": "50000",
+            "Description": "buy test",
+            "Contact_details": "test@buy.com"
+        },
+        {
+            "ItemToBuy": "Boxing Bag",
+            "Price": "50",
+            "Description": "For punching",
+            "Contact_details": "boxer@gmail.com"
+        },
+        {
+            "ItemToBuy": "iPhone",
             "Price": "250",
-            "Description": "5 year old laptop",
-            "Contact_details": "email12121@email.com"
-        },
-        {
-            "ItemToBuy": "headphones",
-            "Price": "120",
-            "Description": "bose headphones",
-            "Contact_details": "email@email.com"
-        },
-        {
-            "ItemToBuy": "ps4",
-            "Price": "150",
-            "Description": "Living in cork",
-            "Contact_details": "1212@hotmail.com"
-        },
-        {
-            "ItemToBuy": "Babys Cot",
-            "Price": "50",
-            "Description": "looking to get a babys cot, please list an offer",
-            "Contact_details": "ololol@hotmail.com"
-        },
-        {
-            "ItemToBuy": "Pool table",
-            "Price": "125",
-            "Description": "Looking to get a pub styled pool table, let me know a price and we can negotiate from there",
-            "Contact_details": "ebald@hotmail.com"
-        },
-        {
-            "ItemToBuy": "Xmas tree",
-            "Price": "50",
-            "Description": "Looking to buy a used artificial xmas tree",
-            "Contact_details": "jshuh@hotmail.com"
-        },
+            "Description": "Please without a cracked screen",
+            "Contact_details": "needaphone@hotmail.com"
+        }
+    ],
+    "sale": [
         {
             "ItemForSale": "Game of Thrones Cups",
             "Price": "15.50",
@@ -43,22 +45,22 @@
             "Contact_details": "test@test.com"
         },
         {
-            "ItemForSale": "Beer glass",
-            "Price": "2.50",
-            "Description": "Guinness glass",
+            "ItemForSale": "new sale",
+            "Price": "1",
+            "Description": "test",
             "Contact_details": "test@test.com"
         },
         {
-            "ItemForSale": "Novelty Mirror",
-            "Price": "100",
-            "Description": "Makes you look like yourself",
+            "ItemForSale": "sale 5",
+            "Price": "5",
+            "Description": "test",
             "Contact_details": "test@test.com"
         },
         {
-            "ItemToBuy": "",
-            "Price": "",
-            "Description": "",
-            "Contact_details": ""
+            "ItemForSale": "buy a plant save the world",
+            "Price": "50",
+            "Description": "its a plant for poor people",
+            "Contact_details": "plantation@gmail.com"
         }
     ]
 }

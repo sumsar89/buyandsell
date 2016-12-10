@@ -13,7 +13,7 @@
 		var tableBuy = $('#toBuyTable');
 		
     
-    $('#refnum, #price')
+    $('#refnum, #price, #item')
         .wrapInner('<span title="sort this column"/>')
         .each(function(){
             
@@ -48,7 +48,7 @@
         });
 				
 			var tableSale = $('#forSaleTable');	
-	    $('#refnum2, #price2')
+	    $('#refnum2, #price2, #item2')
         .wrapInner('<span title="sort this column"/>')
         .each(function(){
             
@@ -92,15 +92,15 @@
 	<h3>To Buy</h3>
   <table id='toBuyTable' border="1">
     <tr bgcolor="#364156">
-			<th style="text-align:left" id="refnum">Reference Number ^</th>
-      <th style="text-align:left">Wanted</th>
-      <th style="text-align:left" id="price">Willing To Pay^</th>
+			<th style="text-align:left" id="refnum">Listing Number</th>
+      <th style="text-align:left" id="item">Wanted</th>
+      <th style="text-align:left" id="price">Willing To Pay</th>
 	 	 <th style="text-align:left">Buyer comments</th>
 	 	 <th style="text-align:left">Buyers Email</th>
     </tr>
 		<xsl:for-each select="salesboard/buy">
     <tr>
-			<td>To Buy <xsl:number/>. <xsl:value-of select="RefID"/></td>
+			<td>Buy <xsl:number/>. <xsl:value-of select="RefID"/></td>
       <td><xsl:value-of select="ItemToBuy"/></td>
       <td><xsl:value-of select="Price"/></td>
 	 		<td><xsl:value-of select="Description"/></td>
@@ -112,15 +112,15 @@
   <h3>For Sale</h3>
   <table id="forSaleTable" border="1">
     <tr bgcolor="#7D4E57">
-			<th style="text-align:left" id="refnum2">Reference Number^</th>
-      <th style="text-align:left">For Sale</th>
-      <th style="text-align:left" id="price2">Price Wanted^</th>
+			<th style="text-align:left" id="refnum2">Listing Number</th>
+      <th style="text-align:left" id="item2">For Sale</th>
+      <th style="text-align:left" id="price2">Price Wanted</th>
 	 	 <th style="text-align:left">Product Condition</th>
 	 	 <th style="text-align:left">Sellers Email</th>
     </tr>
 		<xsl:for-each select="salesboard/sale">
     <tr>
-			<td>For Sale <xsl:number/>.<xsl:value-of select="RefID"/></td>
+			<td>Sell <xsl:number/>.<xsl:value-of select="RefID"/></td>
       <td><xsl:value-of select="ItemForSale"/></td>
       <td><xsl:value-of select="Price"/></td>
 	 		<td><xsl:value-of select="Description"/></td>

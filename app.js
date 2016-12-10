@@ -120,6 +120,83 @@ router.post('/post/json', function(req, res) {
 });
 
 
+//Code for deleting Sale record
+// POST request to add to JSON & XML files
+router.post('/delete/json', function(req, res) {
+
+  // Function to read in a JSON file, add to it & convert to XML
+  function appendJSON(obj) {
+
+    // Read in a JSON file
+    var JSONfile = fs.readFileSync('Saleboard.json', 'utf8');
+
+    // Parse the JSON file in order to be able to edit it 
+    var JSONparsed = JSON.parse(JSONfile);
+
+    // Add a new record into ad array within the JSON file  
+    //JSONparsed.ad = {}; - Doesn't work
+    JSONparsed.sale.pop(obj);
+
+    // Beautify the resulting JSON file
+    var JSONformated = JSON.stringify(JSONparsed, null, 4);
+
+    // Write the updated JSON file back to the system 
+    fs.writeFileSync('Saleboard.json', JSONformated);
+
+    // Convert the updated JSON file to XML     
+    var XMLformated = js2xmlparser.parse("salesboard", JSON.parse(JSONformated));
+
+    // Write the resulting XML back to the system
+    fs.writeFileSync('Saleboard.xml', XMLformated);
+
+  }
+
+  // Call appendJSON function and pass in body of the current POST request
+  appendJSON(req.body);
+  
+  // Re-direct the browser back to the page, where the POST request came from
+  res.redirect('back');
+
+});
+
+//Code for deleting Buy record
+// POST request to add to JSON & XML files
+router.post('/delete/jsonBuy', function(req, res) {
+
+  // Function to read in a JSON file, add to it & convert to XML
+  function appendJSON(obj) {
+
+    // Read in a JSON file
+    var JSONfile = fs.readFileSync('Saleboard.json', 'utf8');
+
+    // Parse the JSON file in order to be able to edit it 
+    var JSONparsed = JSON.parse(JSONfile);
+
+    // Add a new record into ad array within the JSON file  
+    //JSONparsed.ad = {}; - Doesn't work
+    JSONparsed.buy.pop(obj);
+
+    // Beautify the resulting JSON file
+    var JSONformated = JSON.stringify(JSONparsed, null, 4);
+
+    // Write the updated JSON file back to the system 
+    fs.writeFileSync('Saleboard.json', JSONformated);
+
+    // Convert the updated JSON file to XML     
+    var XMLformated = js2xmlparser.parse("salesboard", JSON.parse(JSONformated));
+
+    // Write the resulting XML back to the system
+    fs.writeFileSync('Saleboard.xml', XMLformated);
+
+  }
+
+  // Call appendJSON function and pass in body of the current POST request
+  appendJSON(req.body);
+  
+  // Re-direct the browser back to the page, where the POST request came from
+  res.redirect('back');
+
+});
 
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {

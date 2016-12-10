@@ -2,83 +2,48 @@
 <!-- Some of the ground work code is sourced from git+https://github.com/mikhail-nci/wad-simple-demo.git and enhancements by myself Greg Dunne-->
 <!-- Table sorter as shown in this and the xml is sourced from http://jsfiddle.net/spetnik/gFzCk/1953/ -->
 <html lang="en" ng-app="">
+
 <head>
 	<title>Buy and Sell</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="/css/custom.css" rel="stylesheet"> 
+	<link href="/css/custom.css" rel="stylesheet">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	</script>
 	<script type="text/javascript" src="/js/jquery.sortElements.js">
 	</script>
-	
-	
-  
-<!--
-The load object below was created by Mikhail Timofeev
--->
+
+
+
+	<!--The load function below was sourced from git+https://github.com/mikhail-nci/wad-simple-demo.git-->
 
 	<script>
-	   function load() {
-	     $.ajax({
-	       url: "/get/html",
-	       cache: false,
-	       success: function(html) {
-	         $("#results").append(html);
-	       }
-	     });
-	   };
+		function load() {
+			$.ajax({
+				url: "/get/html",
+				cache: false,
+				success: function(html) {
+					$("#results").append(html);
+				}
+			});
+		};
 
-	   $(document).ready(function() {
-	     load();
-	     $("#forSale,#toBuy").hide();//hide the input boxes on screen load
-			 	   $(".buyingButton").click(function(){
-	       $("#toBuy").toggle();
-	  	}); 
-		 $(".sellingButton").click(function(){
-				 $("#forSale").toggle();
-	   });
-
-			 
-	   });
-	   
-   
-		/**
 		$(document).ready(function() {
-
-
-    function parseXml(xml) {
-			
-    $(xml).find("url").eq(1).remove();
-
-    $(xml).find("url").each(function(index) {
-        $("#results").append($(this).text());
-    });
-    }
-
-		});**/
-		
-		
-		
-	/**	
-function myFunction(xml) {
-    var xmlDoc = xml.responseXML;
-    var len = xmlDoc.getElementsByTagName('salesboard').length;
-    var y = xmlDoc.getElementsByTagName("salesboard")[len-1];
-    var x = xmlDoc.documentElement.removeChild(y);
-    document.getElementById("#results").innerHTML =
-    "Removed node: " + x.nodeName;
-}
-		
-			//DELETE XML TABLE DATA
-	$(document).ready(function(){
-	   $(".deleteXML").click(function(){
-	       myFunction();
-	   });
-	}); **/
+			load();
+			$("#forSale,#toBuy, #deleteRow, #deleteBuyRow").hide(); //hide the input boxes on screen load
+			$(".buyingButton").click(function() {
+				$("#toBuy").toggle();
+			});
+			$(".sellingButton").click(function() {
+				$("#forSale").toggle();
+			});
+			$(".deleteXML").click(function() { //Toggles 'Sale admin'
+				$("#deleteRow").toggle();
+			});
+		});
 	</script>
 </head>
 
@@ -86,27 +51,21 @@ function myFunction(xml) {
 	<div class="container">
 		<div class="page-header">
 			<h1>Buy & Sell</h1>
-      <ul id="links">
-        <li><a href="#">Admin</a></li>
-      </ul>
-
-			<span></span>
 		</div>
 		<!--Results and row-->
 
 
 		<div class="row">
-			
-			
+
+			<!--Displays the parsed table-->
 			<div class="span12" id="results">
-				<!-- Test Button to Delete-->
-	<button class="button deleteXML">Clear Data</button>			
-
 			</div>
-			<!-- To buy box -->
 
 
+			<!-- Box Wrapper starts here -->
 			<div class="span6" id="boxWrapper">
+
+				<!--Coding for the buying section starts here-->
 				<button class="button buyingButton">Advertise To Buy</button>
 
 				<div id="toBuy">
@@ -114,60 +73,63 @@ function myFunction(xml) {
 						<li>
 							<form action="/post/json" enctype='application/json' method="post">
 								<div class="field">
-									<input name="ItemToBuy" placeholder="Item to buy" type="text">
+									<input name="ItemToBuy" placeholder="Item to buy" type="text" required>
 								</div>
 
 								<!--onkeypress event below restricts input to numbers only, reference http://stackoverflow.com/questions/10713749/javascript-validation-numbers-only-->
 								<div class="field">
-									<input name="Price" placeholder="Max Price" type="text" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
+									<input name="Price" placeholder="Max Price" type="text" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" required>
 								</div>
 
 
 								<div class="field">
-									<input name="Description" placeholder="Description" type="text">
+									<input name="Description" placeholder="Description" type="text" required>
 								</div>
 
 								<!--Type restricts input to email format-->
 								<div class="field">
-									<input name="Contact_details" placeholder="Email Address" type="email" >
+									<input name="Contact_details" placeholder="Email Address" type="email" required>
 								</div>
 
-								
+
 								<div class="field">
-									<button class="smallbutton toBuyButton" type="submit" >POST PLEA</button>
+									<button class="smallbutton toBuyButton" type="submit">POST PLEA</button>
 								</div>
 							</form>
 						</li>
 					</ul>
 				</div>
+				<!-- Coding for buying section ends here-->
+
 			</div>
 			<!--BoxWrapper-->
 
 			<div class="span6" id="boxWrapper">
-				<!-- For Sale Box-->
+
+				<!-- For Sale Box Starts here-->
 				<button class="button sellingButton">Advertise To Sell</button>
 
 				<div id="forSale">
 					<ul class="nav nav-list well">
 						<li>
-							<form action="/post/jsonSale" enctype='application/json' method="post">
+							<form action="/post/jsonSale" enctype='application/json' method="post" name="saleForm">
 								<div class="field">
-									<input name="ItemForSale" placeholder="Item for sale" type="text">
+									<input name="ItemForSale" placeholder="Item for sale" type="text" required>
 								</div>
 
 								<!--onkeypress event  below restricts input to numbers only, reference http://stackoverflow.com/questions/10713749/javascript-validation-numbers-only-->
 								<div class="field">
-									<input name="Price" placeholder="Price"  type="text" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
+									<input name="Price" placeholder="Price" type="text" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" required>
 								</div>
 
 
 								<div class="field">
-									<input name="Description" placeholder="Description" type="text">
+									<input name="Description" placeholder="Description" type="text" required>
 								</div>
 
 								<!--Type restricts input to email format-->
 								<div class="field">
-									<input name="Contact_details" placeholder="Email Address" type="email">
+									<input name="Contact_details" placeholder="Email Address" type="email" required>
 								</div>
 
 
@@ -177,11 +139,43 @@ function myFunction(xml) {
 							</form>
 						</li>
 					</ul>
+
+
 				</div>
+				<!--For sale section ends here-->
+				<!-- Box for Admin section starts here-->
+				<button class="button deleteXML">Admin</button>
+				<div id="deleteRow">
+					<!--Delete Last Sale Listing-->
+					<ul class="nav nav-list well">
+						<li>
+							<form action="/delete/json" enctype='application/json' method="post">
+								<div class="field">
+									<button class="smallbutton forSaleButton" type="submit">Delete Last Sale Listing</button>
+								</div>
+							</form>
+						</li>
+					</ul>
+					<!--Delete Last Buy Listing-->
+					<ul class="nav nav-list well">
+						<li>
+							<form action="/delete/jsonBuy" enctype='application/json' method="post">
+								<div class="field">
+									<button class="smallbutton toBuyButton" type="submit">Delete Last Buy Listing</button>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+				<!--Box for admin section ends here -->
+
 			</div>
 			<!--BoxWrapper-->
+
 		</div>
+
 		<!-- Row-->
 	</div>
 </body>
+
 </html>

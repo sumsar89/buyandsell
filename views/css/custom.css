@@ -124,3 +124,12 @@ input[type=text], input[type=number], input[type=email]{
 #links a{
   color: white;
 }
+
+.deleteXML{
+  margin-top: 20px;
+}
+
+.deleteBuyXML{
+  background-color: #364156;
+  margin-top:20px;
+}

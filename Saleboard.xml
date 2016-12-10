@@ -1,63 +1,45 @@
 <?xml version='1.0'?>
 <salesboard>
     <buy>
-        <ItemToBuy>buy 1</ItemToBuy>
-        <Price>1</Price>
-        <Description>test</Description>
-        <Contact_details>test@test.com</Contact_details>
+        <ItemToBuy>Used Car</ItemToBuy>
+        <Price>1999.99</Price>
+        <Description>Looking for a 3 door good condition car.</Description>
+        <Contact_details>4x4@gmail.com</Contact_details>
     </buy>
     <buy>
-        <ItemToBuy>buy 2</ItemToBuy>
-        <Price>20000</Price>
-        <Description>buy 2</Description>
-        <Contact_details>buy2@test.com</Contact_details>
-    </buy>
-    <buy>
-        <ItemToBuy>buy 4</ItemToBuy>
-        <Price>4000</Price>
-        <Description>buy 4</Description>
-        <Contact_details>buy4@test.com</Contact_details>
-    </buy>
-    <buy>
-        <ItemToBuy>buy cow</ItemToBuy>
-        <Price>50000</Price>
-        <Description>buy test</Description>
-        <Contact_details>test@buy.com</Contact_details>
-    </buy>
-    <buy>
-        <ItemToBuy>Boxing Bag</ItemToBuy>
-        <Price>50</Price>
-        <Description>For punching</Description>
-        <Contact_details>boxer@gmail.com</Contact_details>
+        <ItemToBuy>Bicycle</ItemToBuy>
+        <Price>200</Price>
+        <Description>Must have wheels, seat and pedals. </Description>
+        <Contact_details>commuter2@gmail.com</Contact_details>
     </buy>
     <buy>
         <ItemToBuy>iPhone</ItemToBuy>
-        <Price>250</Price>
-        <Description>Please without a cracked screen</Description>
+        <Price>200</Price>
+        <Description>no cracks please</Description>
         <Contact_details>needaphone@hotmail.com</Contact_details>
     </buy>
     <sale>
         <ItemForSale>Game of Thrones Cups</ItemForSale>
         <Price>15.50</Price>
         <Description>new</Description>
-        <Contact_details>test@test.com</Contact_details>
+        <Contact_details>cuppatea@hotmail.com</Contact_details>
     </sale>
     <sale>
-        <ItemForSale>new sale</ItemForSale>
-        <Price>1</Price>
-        <Description>test</Description>
-        <Contact_details>test@test.com</Contact_details>
+        <ItemForSale>HP Laptop</ItemForSale>
+        <Price>1000.99</Price>
+        <Description>Loads of RAM</Description>
+        <Contact_details>madscone@outlook.com</Contact_details>
     </sale>
     <sale>
-        <ItemForSale>sale 5</ItemForSale>
-        <Price>5</Price>
-        <Description>test</Description>
-        <Contact_details>test@test.com</Contact_details>
+        <ItemForSale>Google Chrome</ItemForSale>
+        <Price>45.50</Price>
+        <Description>Second gen model</Description>
+        <Contact_details>googlelover@gmail.com</Contact_details>
     </sale>
     <sale>
-        <ItemForSale>buy a plant save the world</ItemForSale>
-        <Price>50</Price>
-        <Description>its a plant for poor people</Description>
-        <Contact_details>plantation@gmail.com</Contact_details>
+        <ItemForSale>Crate of beer</ItemForSale>
+        <Price>25.00</Price>
+        <Description>Grolsch, delivered after 10pm when off licence is closed</Description>
+        <Contact_details>offyonwheels@yahoo.com</Contact_details>
     </sale>
 </salesboard>

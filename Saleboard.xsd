@@ -2,12 +2,21 @@
   <xs:element name="salesboard">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="ad" maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="buy" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element type="xs:string" name="ItemForSale" minOccurs="0"/>
-              <xs:element type="xs:string" name="ItemToBuy" minOccurs="0"/>
-              <xs:element type="xs:short" name="Price"/>
+              <xs:element type="xs:string" name="ItemToBuy"/>
+              <xs:element type="xs:float" name="Price"/>
+              <xs:element type="xs:string" name="Description"/>
+              <xs:element type="xs:string" name="Contact_details"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sale" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="ItemForSale"/>
+              <xs:element type="xs:float" name="Price"/>
               <xs:element type="xs:string" name="Description"/>
               <xs:element type="xs:string" name="Contact_details"/>
             </xs:sequence>

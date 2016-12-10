@@ -1,12 +1,6 @@
 {
     "ad": [
         {
-            "ItemForSale": "tv",
-            "Price": "100",
-            "Description": "21\" tv",
-            "Contact_details": "email121212@email.com"
-        },
-        {
             "ItemForSale": "hp laptop",
             "Price": "250",
             "Description": "5 year old laptop",
@@ -59,6 +53,12 @@
             "Price": "100",
             "Description": "Makes you look like yourself",
             "Contact_details": "test@test.com"
+        },
+        {
+            "ItemToBuy": "",
+            "Price": "",
+            "Description": "",
+            "Contact_details": ""
         }
     ]
 }
